@@ -1,0 +1,31 @@
+org: bando
+app: api-rest-arqui-tarea2
+service: api-rest-arqui-tarea2
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: python3.8
+  lambdaHashingVersion: '20201221'
+
+functions:
+  UF:
+    handler: handler.UF
+    events:
+      - httpApi:
+          path: /uf
+          method: get
+  dolar:
+    handler: handler.dolar
+    events:
+      - httpApi:
+          path: /dolar
+          method: get
+
+plugins:
+  - serverless-offline
+  - serverless-python-requirements
+custom:
+  pythonRequirements:
+    dockerizePip: non-linux

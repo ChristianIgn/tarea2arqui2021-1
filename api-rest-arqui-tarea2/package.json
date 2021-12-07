@@ -1,0 +1,27 @@
+{
+  "name": "tarea2arqui2021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hectorsaravia/tarea2arqui2021.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hectorsaravia/tarea2arqui2021/issues"
+  },
+  "homepage": "https://github.com/hectorsaravia/tarea2arqui2021#readme",
+  "devDependencies": {
+    "serverless-offline": "^8.3.1",
+    "serverless-python-requirements": "^5.2.2"
+  },
+  "dependencies": {
+    "stable": "^0.1.8"
+  }
+}
