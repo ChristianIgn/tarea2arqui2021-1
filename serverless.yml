@@ -10,6 +10,12 @@ provider:
   lambdaHashingVersion: '20201221'
 
 functions:
+  temperatura:
+    handler: handler.temperatura
+    events:
+      - httpApi:
+          path: /temperatura
+          method: get
   UF:
     handler: handler.UF
     events:
@@ -21,6 +27,18 @@ functions:
     events:
       - httpApi:
           path: /dolar
+          method: get
+  crucigrama:
+    handler: handler.crucigrama
+    events:
+      - httpApi:
+          path: /crucigrama
+          method: get
+  apitoday:
+    handler: handler.apitoday
+    events:
+      - httpApi:
+          path: /apitoday
           method: get
 
 plugins:
